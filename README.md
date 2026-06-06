@@ -32,7 +32,6 @@
 <a href='https://icml.cc/'><img src='https://img.shields.io/badge/ICML-2026-179BFF.svg'></a>
 <a href="DC-Leap.pdf"><img alt="PDF" src="https://img.shields.io/badge/PDF-Download-ec1c24.svg?logo=adobeacrobatreader&logoColor=white"></a>
 <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License">
-<img src="https://img.shields.io/github/stars/ffh-wyls/DC-Leap?style=flat-square&logo=github" alt="Stars">
 
 </div>
 
@@ -53,11 +52,11 @@
   <img src="assets/teaser.png" alt="Motivation" width="80%"  />
 </p>
 
-DC-Leap unlocks the siginificent acceleration potential of dLLMs.
+DC-Leap unlocks the significant acceleration potential of dLLMs.
 
 **Key Achievements:**
 *   ⚡ **Massive Speedups:** Achieves up to **53.19×** speedup on MBPP for long-sequence generation (1024 tokens).
-*   🚀 **Orthogonal to KV-Cache:** Enables further speedup when combined with KV-Cache desighed for dLLMs.
+*   🚀 **Orthogonal to KV-Cache:** Enables further speedup when combined with KV-Cache designed for dLLMs.
 *   🛡️ **Comparable Quality:** Maintains comparable performance to baselines and other parallel decoding methods across diverse benchmarks.
 *   🔧 **Universal Compatibility:** A training-free method compatible with [LLaDA-8B-Instruct](https://huggingface.co/GSAI-ML/LLaDA-8B-Instruct), [LLaDA-1.5](https://huggingface.co/GSAI-ML/LLaDA-1.5),and [Dream-v0-7B-Instruct](https://huggingface.co/Dream-org/Dream-v0-Instruct-7B).
 
@@ -68,7 +67,7 @@ DC-Leap unlocks the siginificent acceleration potential of dLLMs.
   <img src="assets/method.png" alt="Method" width="60%" />
 </p>
 
-DC-Leap consists of two core mechanisms: Dynamic Contiguous Verification (DCV) and a Draft-Guided Decoding. DCV ensures that the model strictly follows the left-to-right decoding order to safely use much lower confidence thresholds for multi-token acceptance, while the Draft-Guided Decoding leverages high-confidence tokens outside the current window as semantic anchors to provide right-side look-ahead context for faster convergence.
+DC-Leap consists of two core mechanisms: Dynamic Contiguous Verification (DCV) and Draft-Guided Decoding. DCV ensures that the model strictly follows the left-to-right decoding order to safely use much lower confidence thresholds for multi-token acceptance, while the Draft-Guided Decoding leverages high-confidence tokens outside the current window as semantic anchors to provide right-side look-ahead context for faster convergence.
 
 
 ## 🎨 Graio Demo
@@ -93,7 +92,7 @@ pip install -r requirements.txt
 ```
 ## 2. Model Setup
 
-After downloading [LLaDA-8B-Instruct](https://huggingface.co/GSAI-ML/LLaDA-8B-Instruct), [LLaDA-1.5](https://huggingface.co/GSAI-ML/LLaDA-1.5),and [Dream-v0-7B-Instruct](https://huggingface.co/Dream-org/Dream-v0-Instruct-7B), replace the `/path/to/your/modelname` in the code with your local path.
+After downloading [LLaDA-8B-Instruct](https://huggingface.co/GSAI-ML/LLaDA-8B-Instruct), [LLaDA-1.5](https://huggingface.co/GSAI-ML/LLaDA-1.5), and [Dream-v0-7B-Instruct](https://huggingface.co/Dream-org/Dream-v0-Instruct-7B), replace the `/path/to/your/modelname` in the code with your local path.
 
 ## 3. Test Single Questions
 
