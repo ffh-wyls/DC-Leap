@@ -165,8 +165,7 @@ If you find our work useful in your research, please consider citing our paper:
 
 ```bibtex
 @inproceedings{jiao2026dcleap,
-title={DC-Leap: Training-Free Acceleration of dLLMs
-via Draft-Guided Contiguous Leaping Decoding},
+title={DC-Leap: Training-Free Acceleration of dLLMs via Draft-Guided Contiguous Leaping Decoding},
 author={Jiao Yanhua, and Wu Tianyi and Sun Xiaoxi  and Li Yulin and Zhen Huilin and Qin Libo and Hu Baotian and Tian Zhuotao and Zhang Min},
 booktitle={Forty-third International Conference on Machine Learning},
 year={2026}
